@@ -4,14 +4,16 @@
 [alias]
 	st = status
 	rv = remote -v
+	co = commit
 	cm = commit -m
 	cma = commit -am
+	ca = commit --amend
+	can = commit --amend --no-edit
 	a = add .
 	cp = cherry-pick
 	cpn = cherry-pick -n
-	co = commit
-	ch = checkout
 	br = branch
+	ch = checkout
 	sw = switch
 	ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	last = log -1 HEAD --stat
